@@ -20,16 +20,16 @@ public class HashMapGradebook {
             System.out.print("Student: ");
             newStudent = input.nextLine();
 
-            if (!newStudent.equals("")) {
+            if (newStudent != "") {
                 System.out.print("Grade: ");
                 Double newGrade = input.nextDouble();
                 students.put(newStudent, newGrade);
-
+                //students[newStudent] = newGrade;
                 // Read in the newline before looping back
                 input.nextLine();
             }
 
-        } while(!newStudent.equals(""));
+        } while(newStudent != "");
 
         // Print class roster
         System.out.println("\nClass roster:");
